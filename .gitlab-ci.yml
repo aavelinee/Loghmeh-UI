@@ -6,7 +6,6 @@ services:
   - docker:dind
 
 before_script:
-  - echo "$CI_REGISTRY_USER_DOCKERHUB"
   - docker login -u "$CI_REGISTRY_USER_DOCKERHUB" -p "$CI_REGISTRY_PASSWORD_DOCKERHUB" $CI_REGISTRY_DOCKERHUB
 
 build-master:
@@ -21,7 +20,6 @@ build:
   stage: build
   script:
     - docker build --pull -t "$CI_REGISTRY_IMAGE_DOCKERHUB" .
-    - echo "$CI_REGISTRY_USER_DOCKERHUB"
     - docker push "$CI_REGISTRY_IMAGE_DOCKERHUB"
   except:
     - master
