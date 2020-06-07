@@ -1,0 +1,45 @@
+.profile-jumbotron {
+	background-color: #FF6B6B;
+    display: flex;
+    height: 180px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.right{
+	width: 50%;
+	display: flex;
+    color: white;
+    margin-top: -10px;
+}
+
+.container-lg {
+    margin-right: 40px;
+    display: flex;
+}
+
+.name{
+    margin-top: 2vmax;
+	font-size: 3vh;
+    font-weight: bold; 
+    white-space: nowrap;
+}
+
+.left{
+	width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -6vh;
+}
+
+.all-data {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.data{
+	color: white;
+	display: flex;
+}

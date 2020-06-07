@@ -1,0 +1,133 @@
+.foodparty-food {
+    border-radius: 7px;
+    border: solid lightgrey;
+    border-width: 1px;
+    padding: 20px; 
+    width: 30vmin;
+    height: 30vmin;
+    background-color: white;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.foodparty-food-row {
+    height: 3vmin;
+    display: flex;
+}
+
+.foodparty-foodinfo {
+    height: 13vmin;
+}
+
+#foodpartyfood-popularity {
+    font-size: 12px;
+}
+
+.right-foodparty-foodinfo {
+    display: flex;
+    justify-content: center;
+}
+
+#foodparty-foodimg {
+    height: 10vmin;
+    width: 10vmin;
+}
+
+#foodparty-foodname {
+    font-size: 13px;
+    text-align: start;
+    font-weight: 450;
+}
+
+.food-star-icon {
+    margin-top: -1vmin;
+}
+
+.foodparty-price {
+    margin-top: 5px;
+}
+
+.right-foodparty-price {
+    font-weight: lighter;
+    text-decoration: line-through #FF6B6B;
+}
+
+.left-foodparty-price {
+    text-align: start;
+}
+
+.foodparty-buy {
+    height: 6vmin;
+}
+
+#countLeft {
+    white-space: nowrap;
+    font-size: 11px;
+    border: solid thin rgba(182, 182, 182, 0.746);
+    border-radius: 6px;    
+    background-color: #F7FFF7;
+    min-width: 10vmin;
+    height: 2.5vmin;
+    text-align: center;
+    color: rgba(34, 34, 34, 0.746);
+    margin-top: 2vmin;
+    color: rgb(136, 136, 136);
+
+}
+
+.foodparty-buy-btn {
+    font-size: 12px;
+    border: solid 1px #4ECDC4;
+    border-radius: 6px;    
+    background-color: #4ECDC4;
+    min-width: 10vmin;
+    height: 2.5vmin;
+    text-align: center;
+    color: white;
+    margin-top: 2vmin;
+    padding: 0px;
+}
+
+.foodparty-cant-buy-btn {
+    font-size: 12px;
+    border: solid 1px rgb(136, 136, 136);
+    border-radius: 6px;    
+    background-color: rgb(136, 136, 136);
+    min-width: 10vmin;
+    height: 2.5vmin;
+    text-align: center;
+    color: white;
+    margin-top: 2vmin;
+    padding: 0px;
+}
+
+.foodparty-buy-btn:focus, .foodparty-cant-buy-btn:focus {
+    outline: none;
+}
+
+.foodparty-restname {
+    /* margin-bottom: -1vmin; */
+    display: flex;
+    justify-content: center;
+    border-top: 1px dashed rgb(180, 180, 180);
+    /* padding: 5px; */
+
+}
+
+#foodparty-restaurantname {
+    font-size: 0.85em;
+    font-weight: 350;
+    margin-top: 0.6vmin;
+    /* align-self: center; */
+}
+
+.modal-content {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}

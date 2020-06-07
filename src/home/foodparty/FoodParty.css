@@ -1,0 +1,49 @@
+.food-party {
+    display: flex;
+    flex-direction: column;
+    /* border: solid red; */
+    width: 100%;
+    height: 48vh;
+    margin-top: 10vh;
+}
+
+.foodparty-row {
+    align-self: center;
+}
+
+#foodparty-heading {
+    font-size: 25px;
+    color: #1A535C;
+    border-bottom: 2px solid #1A535C;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.foodparty-time {
+    border: solid 1px #1A535C;
+    border-radius: 4px;
+    padding-right: 1vmin;
+    padding-left: 1vmin;
+    text-align: start;
+    color: #1A535C;
+    height: 5vmin;
+}
+
+.remaining-time {
+    font-size: 10px;
+    margin: auto;
+    
+}
+
+.foodParyFoods {
+    display: flex;
+    align-items: center;
+    margin-top: 1vmin;
+    /* padding-top: 1vmin; */ 
+    height: 45vmin;
+    /* border: solid red; */
+    box-shadow:0 4px 20px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+

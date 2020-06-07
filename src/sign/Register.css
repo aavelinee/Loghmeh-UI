@@ -1,0 +1,48 @@
+.register-main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    min-height: calc(100vh - 16vmin - 7vh);
+    height: max-content;
+}
+
+.sign-up-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sign-up-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8px;
+}
+.sign-in-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-in-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sign-in-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 8px;
+}

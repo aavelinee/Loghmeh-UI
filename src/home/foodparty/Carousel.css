@@ -1,0 +1,24 @@
+/* .slick-slider  */
+
+.sliders * {
+    direction: ltr;
+  }
+  
+  .slick-slide {
+    float: right!important;
+    width: 100%;
+  }
+  .slick-slider {
+    direction: ltr;
+    width: 100%;
+  }
+  .slick-track {
+    direction: rtl;
+    width: 100%;
+  }
+  .slick-list {
+    padding: 0px 10px 10!important;
+    /* width: 100%; */
+    /* height: fit-content; */
+  }
+  

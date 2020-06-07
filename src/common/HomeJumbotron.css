@@ -1,0 +1,125 @@
+.home-jumbotron {
+    /* background-image: url('../images/Cover.jpg'); */
+    background: url('../images/Cover.jpg') no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+
+    max-width: 100%;
+    height: 40vh;
+    /* height: 400px; */
+
+}
+
+.home-red-jumbotron {
+    height: 33vh;
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: rgba(230, 0, 0, 0.4);
+    width: 100vw;
+    margin-right: -28px;
+}
+
+@media screen and (max-width: 800px) {
+    .home-red-jumbotron {
+        margin-right: -14px;
+    }
+}
+
+.home-loghmeh-logo {
+    align-self: center;
+
+    margin-top:15vh;
+    /*margin-bottom: -10vh; */
+
+    height: 13vmin;
+    width: 13vmin;
+    /* border: solid blue; */
+
+}
+
+img.home-loghmeh-img {
+    border-radius: 13vmin;
+    width: 13vmin;
+    /* box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+
+  }
+
+.homeTitle {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80vw;
+    height: 6vh;
+    margin-top: 1vh;
+    /* border: solid blue; */
+}
+
+.homeHeading {
+    height: 4vh;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 80vw;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+}
+
+.searchBox {
+    margin-top: 6vh;
+    bottom: 0;
+    z-index: 1;
+    height: 10vh;
+    width: 50vw;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foodname-input, .restname-input {
+    width: 12vw;
+    background-color: rgb(240, 243, 243);
+    border-radius: 8px;
+    height: 7vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+.search-btn {
+    width: 10vw;
+    height: 7vh;
+    border-radius: 8px;
+    background-color: #FFE66D;
+    color: #1A535C;
+    margin-right: 2vh;
+    text-align: center;
+    border:solid thin yellow;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .searchBox {
+        margin-top: 10vh; 
+    }
+
+    .foodname-input, .restname-input , .form-inline .form-control{
+        width: 12vw;
+        height: 4vh;
+    }
+    
+    .search-btn {
+        width: 10vw;
+        height: 4vh;
+        margin-right: 2vh;
+    }
+}
+
+.search-btn:focus {
+    outline: none;
+}

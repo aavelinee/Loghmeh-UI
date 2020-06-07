@@ -1,0 +1,26 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    /* height: 50px; */
+    height: 8vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-copyright {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1A535C;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    margin-top: 15px;
+    color: white;
+}

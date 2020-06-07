@@ -1,0 +1,35 @@
+{
+  "name": "loghmeh_react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^1.9.1",
+    "material-ui-rating": "^4.2.0",
+    "moment": "^2.24.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-awesome-modal": "^2.0.5",
+    "react-awesome-stars-rating": "^0.2.5",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.1",
+    "react-google-login": "^5.1.14",
+    "react-multi-carousel": "^2.5.5",
+    "react-password-strength": "^2.4.0",
+    "react-scripts": "0.9.5",
+    "react-slick": "^0.25.2",
+    "react-stars": "^2.2.5",
+    "react-stars-rating": "0.0.5",
+    "react-swipeable-carousel": "^1.0.5",
+    "simple-react-modal": "^0.5.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

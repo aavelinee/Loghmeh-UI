@@ -1,0 +1,54 @@
+.navbar {
+    background-color: white;
+    /* height: 50px; */
+    height: 8vmin;
+    display: flex;
+    position: fixed;
+    margin-top: 0;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
+.container-fluid  {
+  width: 100vw;
+}
+
+  .right-navbar {
+    height: 50px;
+    display: flex;
+    width: 75vw;
+  }
+  
+  img {
+    border-radius: 3px;
+    width: 40px;
+  }
+  
+  .left-navbar{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    width: 25vw;
+    margin-top: -10px;
+  }
+  
+  .profile {
+    color: rgb(100, 100, 100);
+    margin-left: 25px;
+    margin-top: 15px;
+    white-space: nowrap;
+  }
+  
+  a.quit-link {
+    color: #FF6B6B;
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+  
+  .modal-content {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}

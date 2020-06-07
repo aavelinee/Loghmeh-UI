@@ -1,0 +1,190 @@
+.home-restaurants {
+    width: 80%;
+    height: 50vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: max-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.restaurants-heading {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    color: #1A535C;
+    padding-bottom: 1px;
+}
+
+#restaurants-heading {
+    color: #1A535C;
+    border-bottom: 2px solid #1A535C;
+    padding-bottom: 1px;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home-restaurants-row {
+    height: 30vmin;
+    margin-top: 6vmin;
+}
+
+.home-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 7px;
+    border: solid lightgrey;
+    border-width: 1px;
+    padding: 20px; 
+    width: 26vmin;
+    height: 28vmin;
+    background-color: white;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+    align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+    .home-restaurant {
+        width: 20vmin;
+        height: 25vmin;
+        margin-left: 30px;
+        margin-right: 0px;
+    }
+}
+
+.home-restpic {
+    height: 18vmin;
+    width: 24vmin;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vmin;
+}
+
+#home-restpic {
+    height: 14vmin;
+    width: 14vmin;
+}
+
+@media screen and (max-width: 800px) {
+    .home-restpic {
+        width: 18vmin;
+        height: 15vmin;
+    }
+
+    .home-restaurants-row {
+        width:90vw;
+        margin-left: 10vw;
+        margin-right: -7vw;
+    }
+}
+
+.load-more-or-less {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.next-page-btn {
+    font-size: 12px;
+    border: solid 1px #4ECDC4;
+    border-radius: 6px;    
+    background-color: #4ECDC4;
+    min-width: 20vmin;
+    height: 4vmin;
+    text-align: center;
+    color: white;
+    margin: 1vmin;
+
+}
+
+.prev-page-btn {
+    font-size: 12px;
+    border: solid 1px #4ECDC4;
+    border-radius: 6px;    
+    background-color: #4ECDC4;
+    min-width: 20vmin;
+    height: 4vmin;
+    text-align: center;
+    color: white;
+    margin: 1vmin;
+    /* margin-top: 2%; */
+}
+
+.no-prev-page-btn {
+    font-size: 12px;
+    border: solid 1px rgb(136, 136, 136);
+    border-radius: 6px;    
+    background-color: rgb(136, 136, 136);;
+    min-width: 20vmin;
+    height: 4vmin;
+    text-align: center;
+    color: white;
+    margin: 1vmin;
+    /* margin-top:  2%; */
+}
+
+.no-prev-page-btn:focus, .prev-page-btn:focus, .next-page-btn:focus {
+    outline: none;
+}
+
+.home-restname {
+    height: 3vmin;
+    width: 24vmin;   
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vmin;
+}
+
+#home-restname {
+    font-size: 11px;
+    font-weight: 500; 
+    /* white-space: nowrap; */
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .home-restname {
+        width: 18vmin;
+    }
+}
+
+
+.home-restmenu-btn {
+    /* border: solid orange; */
+    height: 5vmin;
+    width: 24vmin;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vmin;
+
+}
+
+#home-restmenu-btn {
+    border-radius: 5px;
+    background-color: #FFE66D;
+    color: rgba(61, 61, 61, 0.746);
+    text-align: center;
+    border:solid thin yellow;
+    height: 3.5vmin;
+    width: 13vmin;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .home-restmenu-btn {
+        width: 18vmin;
+        margin-top: 1vmin;
+    }
+}
+
+#home-restmenu-btn:focus {
+    outline: none;
+}

@@ -1,0 +1,36 @@
+.menu-jumbotron {
+	background-color: #FF6B6B;
+    display: flex;
+    height: 30vmin;
+    margin-top: 50px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.restaurant-logo {
+    margin-top: 35vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-logo img{
+    height: 40vmin;
+    width: 40vmin;
+    background: white; 
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+.restaurant-name {
+    /* margin-top: -15px; */
+    margin-top: -3vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-name b{
+    font-size: 30px;
+    /* font-weight: 400; */
+    margin-top: 15px;
+}

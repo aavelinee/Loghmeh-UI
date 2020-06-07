@@ -1,0 +1,86 @@
+
+.cart-item-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: solid thin rgb(204, 204, 204);
+    align-self: center;
+    /* min-width: fit-content; */
+    /* border: solid yellow; */
+}
+
+@media screen and (max-width: 800px) {
+    .cart-item {
+        width: 200px;
+    }
+}
+
+.cart-item-info {
+    /* border: solid; */
+    height: 6vmin;
+}
+
+
+
+.cart-food-name {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+
+.cart-food-name {
+    font-weight: 300;
+    /* white-space: nowrap; */
+    text-align: start;
+}
+
+.cart-ord-add-cart {
+    /* border: solid orange; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2vmin;
+}
+
+.addcart-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2.5vmin;
+}
+
+.cart-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+}
+
+.cart-ord-num {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2.5vmin;
+    margin-left: 5px;
+
+}
+
+.cart-minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+
+}
+
+.cart-item-price {
+    /* border: solid; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cart-item-price {
+    font-size: small;
+    font-weight: 200;
+    height: 2vmin;
+    padding-left: 3vmin;
+}

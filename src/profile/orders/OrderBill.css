@@ -1,0 +1,95 @@
+.order-bill {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 20px;
+    border: solid lightgrey;
+    border-width: 1px;
+    /* width: 90vmin; */
+    background-color: white;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    max-height: fit-content;
+    width: 150%;
+}
+
+.orderbill-restname {
+    /* margin-bottom: -1vmin; */
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 8vmin;
+    align-self: center;
+    border-bottom: solid 1px rgb(219, 219, 219);
+    margin-bottom: 4vmin;
+    margin-top: 3vmin;
+}
+
+#orderbill-restname {
+    font-weight: 300;
+    font-size: 24px;
+    /* margin-bottom: 1vmin; */
+    align-self: center; 
+    align-self: center;
+}
+
+.order-table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+
+table .order-table, th, td {
+    border: 1px solid #afafaf;
+    border-collapse: collapse;
+  }
+
+  tr {
+      line-height: 2.5vmin;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+
+  }
+
+ th {
+    background-color: #EBEBEB;
+    color: #afafaf;
+  }
+
+  th#table-row, td#table-row {
+    width: 8vmin;
+    height: 4vmin;
+}
+
+  th#table-food, td#table-food {
+      width: 40vmin;
+  }
+
+  th#table-count, td#table-count {
+    width: 16vmin;
+}
+
+th#table-price, td#table-price {
+    width: 16vmin;
+}
+
+.total-cost {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    margin-left: 3vmin;
+    margin-top: -2vmin;
+    padding-bottom: 1.5vmin;
+}
+
+#total-cost {
+    font-weight: bold;
+    font-size: 12px;
+}

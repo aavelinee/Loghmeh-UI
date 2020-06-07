@@ -1,0 +1,58 @@
+.menu-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 30vmin - 16vmin);
+    height: max-content;
+    margin-top: 50vmin;
+    width: 90%;
+    margin-right: -2vmin;
+    margin-bottom: 5vmin;
+}
+
+.menu-name {
+    display: flex;
+    justify-content: center;
+    color: #1A535C;
+    margin-bottom: 5vmin;
+    /* margin-left: -66vmin; */
+}
+
+#menu-name {
+    color: #1A535C;
+    border-bottom: 2px solid #1A535C;
+    font-size: 28px;
+    padding-left: 7vmin;
+    padding-right: 7vmin;
+    margin-left: -65vmin;
+}
+
+@media screen and (max-width: 800px) {
+    #menu-name {
+        font-size: 20px;
+        margin-right: 360px;
+    }
+}
+
+.menu-row {
+    margin-bottom: 5vmin;
+}
+
+.menu-right {
+    display: flex;
+    justify-content: center;
+    border-left: 1px dashed rgb(77, 165, 124);
+}
+
+.cart-container-right-col {
+    width: 80%;
+}
+
+.menu-left {
+    padding-right: -3vmin;
+}
+
+.menu-food-form {
+    display: flex;
+    flex-direction: column;
+}
