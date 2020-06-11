@@ -18,7 +18,7 @@ class App extends Component {
         console.log("token validation is called");
         if (localStorage.getItem("jwt_token") == null)
             return;
-        axios.get("http://185.166.105.194:31356/Loghmeh_war_exploded/token_validation", {
+        axios.get("http://185.166.105.6:31356/Loghmeh_war_exploded/token_validation", {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }
