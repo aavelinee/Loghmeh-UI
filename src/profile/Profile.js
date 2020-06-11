@@ -74,7 +74,7 @@ class Profile extends Component {
 		}
 		else{
 			event.preventDefault();
-			axios.put('http://loghmeh-back:8080/Loghmeh_war_exploded/credit', null,
+			axios.put('http://185.166.105.194:31356/Loghmeh_war_exploded/credit', null,
 				{	params: {'creditIncrease': credit},
 					headers: {
 						Authorization: 'Bearer ' + localStorage.getItem("jwt_token")

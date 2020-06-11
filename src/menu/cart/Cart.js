@@ -38,7 +38,7 @@ class Cart extends Component {
 
     getCart() {
         console.log("getCart is called");
-    	axios.get("http://loghmeh-back:8080/Loghmeh_war_exploded/cart", {
+    	axios.get("http://185.166.105.194:31356/Loghmeh_war_exploded/cart", {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }
@@ -62,7 +62,7 @@ class Cart extends Component {
         console.log("order moreeeeeeeeee in cart", isFoodParty);
         console.log(foodCount)
         event.preventDefault();
-		axios.put('http://loghmeh-back:8080/Loghmeh_war_exploded/put_cart', null,
+		axios.put('http://185.166.105.194:31356/Loghmeh_war_exploded/put_cart', null,
 			{ 
                 params: {'restaurantId': restaurantId, 'foodName' : foodName, 'isFoodParty' : isFoodParty, 'foodCount' : foodCount},
                 headers: {
@@ -84,7 +84,7 @@ class Cart extends Component {
     removeFromCart(restaurantId, foodName, isFoodParty) {
         console.log("order lessssssss", isFoodParty);
         // event.preventDefault();
-		axios.delete('http://loghmeh-back:8080/Loghmeh_war_exploded/del_cart',
+		axios.delete('http://185.166.105.194:31356/Loghmeh_war_exploded/del_cart',
 			{ 
                 params: {'restaurantId': restaurantId, 'foodName' : foodName, 'isFoodParty' : isFoodParty},
                 headers: {
@@ -115,7 +115,7 @@ class Cart extends Component {
     handleFinalize() {
         console.log("finaliiiiiize");
         event.preventDefault();
-		axios.put('http://loghmeh-back:8080/Loghmeh_war_exploded/finalize', null,
+		axios.put('http://185.166.105.194:31356/Loghmeh_war_exploded/finalize', null,
 			{ headers: {
                         Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
                     }}
