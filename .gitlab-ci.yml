@@ -41,4 +41,5 @@ deploy:
     - deliver
   script:
     - export KUBECONFIG=./config.conf
+    - kubectl delete deployment loghmeh-client --ignore-not-found=true
     - kubectl apply -f front-deployment.yml
