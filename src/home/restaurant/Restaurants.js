@@ -50,7 +50,7 @@ class Restaurants extends Component {
     getSearchedRestaurant(restaurantName, foodName, page) {
         this.setState({isSearch: true, restNameSearch: restaurantName, foodNameSearch: foodName});
         let body = {restaurantName : restaurantName, foodName : foodName, page : page};
-        axios.get("http://185.166.105.6:30138/Loghmeh/searched_restaurants", { params: body ,
+        axios.get("http://185.166.105.6:32112/Loghmeh/searched_restaurants", { params: body ,
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }
@@ -70,7 +70,7 @@ class Restaurants extends Component {
     }
 
     getRestaurants(page) {
-        axios.get("http://185.166.105.6:30138/Loghmeh/ordinary_restaurants/" + (page), {
+        axios.get("http://185.166.105.6:32112/Loghmeh/ordinary_restaurants/" + (page), {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }

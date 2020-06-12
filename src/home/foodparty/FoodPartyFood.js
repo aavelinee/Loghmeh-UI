@@ -77,7 +77,7 @@ class FoodPartyFood extends Component {
     addToCart(foodName, foodCount) {
         console.log("state foodCount: ", this.state.food.restaurantId," - ", foodCount, foodName);
         event.preventDefault();
-		axios.put('http://185.166.105.6:30138/Loghmeh/put_cart', null,
+		axios.put('http://185.166.105.6:32112/Loghmeh/put_cart', null,
 			{params: {
                 'restaurantId': this.state.food.restaurantId,
                 'foodName' : foodName,
@@ -118,7 +118,7 @@ class FoodPartyFood extends Component {
     getFoodPartyFood(restaurantId, foodName) {
         console.log("getFoodPartyFood is called", foodName);
         let body = {restaurantId : restaurantId, foodName : foodName}
-    	axios.get("http://185.166.105.6:30138/Loghmeh/foodparty_food", { params: body ,
+    	axios.get("http://185.166.105.6:32112/Loghmeh/foodparty_food", { params: body ,
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }
