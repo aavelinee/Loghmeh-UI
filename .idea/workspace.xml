@@ -45,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/home/foodparty/FoodParty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="511">
+              <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -72,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-deployment.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="446">
+              <caret line="30" column="23" lean-forward="true" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -106,11 +106,13 @@
       <find>185.166.105.6</find>
       <find>axios.</find>
       <find>185.166.105.194</find>
+      <find>31356</find>
       <find>axios</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>185.166.105.6</replace>
+      <replace>30570</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -123,9 +125,9 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/sign/SignUp/SignUp.js" />
         <option value="$PROJECT_DIR$/src/home/restaurant/Restaurants.js" />
-        <option value="$PROJECT_DIR$/src/home/foodparty/FoodParty.js" />
         <option value="$PROJECT_DIR$/src/home/foodparty/FoodPartyFood.js" />
         <option value="$PROJECT_DIR$/src/profile/orders/OrderItem.js" />
+        <option value="$PROJECT_DIR$/src/home/foodparty/FoodParty.js" />
         <option value="$PROJECT_DIR$/front-deployment.yml" />
       </list>
     </option>
@@ -206,16 +208,15 @@
       <option name="presentableId" value="Default" />
       <updated>1591539252978</updated>
       <workItem from="1591539258619" duration="5213000" />
-      <workItem from="1591882653123" duration="7915000" />
+      <workItem from="1591882653123" duration="13966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13128000" />
+    <option name="totallyTimeSpent" value="19179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -287,23 +288,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sign/SignUp/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="82" column="71" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-deployment.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sign/Sign.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -314,10 +298,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sign/SignUp/SignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="82" column="71" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/home/foodparty/FoodParty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="511">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-deployment.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="30" column="23" lean-forward="true" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>

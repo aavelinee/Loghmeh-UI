@@ -80,7 +80,7 @@ class SignUp extends Component {
 		event.preventDefault();
 		if( this.validateInputs()) {
 			console.log("sending registration req");
-			axios.put('http://185.166.105.6:30570/Loghmeh_war_exploded/sign_up', null,
+			axios.put('http://185.166.105.6:32112/Loghmeh_war_exploded/sign_up', null,
 			{params: {'firstname' : this.state.firstname, 'lastname' : this.state.lastname, 
 					  'phone_number' : this.state.phone_number, 'email' : this.state.email,
 					  'password' : this.state.password}}

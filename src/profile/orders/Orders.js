@@ -28,7 +28,7 @@ class Orders extends Component {
     }
 
     getOrders() {
-        axios.get("http://185.166.105.6:30570/Loghmeh_war_exploded/orders",
+        axios.get("http://185.166.105.6:32112/Loghmeh_war_exploded/orders",
             {
                 headers: {
                     Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
