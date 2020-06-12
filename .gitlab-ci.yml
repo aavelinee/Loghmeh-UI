@@ -43,3 +43,6 @@ deploy:
     - export KUBECONFIG=./config.conf
     - kubectl delete deployment loghmeh-client --ignore-not-found=true
     - kubectl apply -f front-deployment.yml
+
+#  kubectl expose deployment loghmeh-client --type NodePort --port 80
+#  kubectl get deployment loghmeh-client -o yaml --export > front-service.yml
