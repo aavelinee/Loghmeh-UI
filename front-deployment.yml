@@ -32,7 +32,7 @@ deliver:
 
 deploy:
   tags:
-    - loghmeh-runner
+    - loghmeh-ui-runner
   image:
     name: bitnami/kubectl
     entrypoint: [""]
