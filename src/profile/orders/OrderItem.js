@@ -39,7 +39,7 @@ class OrderItem extends Component {
     }
 
     getOrderStatus() {
-        axios.get("http://185.166.105.6:30570/Loghmeh_war_exploded/order/" + this.state.order.id, {
+        axios.get("http://185.166.105.6:30138/Loghmeh_war_exploded/order/" + this.state.order.id, {
             headers: {
                 Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
             }
