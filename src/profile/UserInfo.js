@@ -54,7 +54,7 @@ class UserInfo extends Component {
 
 	updateUserInfo() {
 		console.log("updating user info")
-		axios.get("http://185.166.105.6:30138/Loghmeh_war_exploded/customer", {
+		axios.get("http://185.166.105.6:30138/Loghmeh/customer", {
 			headers: {
 				Authorization: 'Bearer ' + localStorage.getItem("jwt_token")
 			}

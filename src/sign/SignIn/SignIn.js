@@ -53,7 +53,7 @@ class SignIn extends Component {
         }
         console.log("sending login req");
         event.preventDefault();
-        axios.put('http://185.166.105.6:30138/Loghmeh_war_exploded/sign_in', null,
+        axios.put('http://185.166.105.6:30138/Loghmeh/sign_in', null,
             {params: {'email': this.state.email, 'password': this.state.password}}
         ).then((response) => {
             var authHeader = response.headers["authorization"].split(" ")[1]
@@ -91,7 +91,7 @@ class SignIn extends Component {
     signIn(id_token) {
         console.log("id token: ", id_token);
         event.preventDefault();
-        axios.put('http://185.166.105.6:30138/Loghmeh_war_exploded/google_sign_in', null,
+        axios.put('http://185.166.105.6:30138/Loghmeh/google_sign_in', null,
             {
                 params: {
                     'token': id_token
