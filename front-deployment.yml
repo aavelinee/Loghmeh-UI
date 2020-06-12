@@ -1,44 +1,44 @@
-apiVersion: apps/v1             # API version
-kind: Deployment                # Type of kubernetes resource
-metadata:
-  name: loghmeh-client      # Name of the kubernetes resource
-  namespace: baharan-aylin-ns
-  labels:                     # Labels that will be applied to this resource
-    app: loghmeh-client
-spec:
-  replicas: 1                   # No of replicas/pods to run
-  selector:
-    matchLabels:                # This deployment applies to Pods matching the specified labels
-      app: loghmeh-client
-  template:                     # Template for creating the Pods in this deployment
-    metadata:
-      labels:                   # Labels that will be applied to all the Pods in this deployment
-        app: loghmeh-client
-    spec:                       # Spec for the containers that will run inside the Pods
-      containers:
-        - name: loghmeh-client
-          image: baharankhatami/loghmeh-frontend:latest
-          imagePullPolicy: Always
-          ports:
-            - name: http
-              containerPort: 80   # Should match the Port that the container listens on
-          resources:
-            limits:
-              cpu: "300m"
-              memory: "100Mi"
-            requests:
-              cpu: "250m"
-              memory: "50Mi"
-#---
-#apiVersion: v1                  # API version
-#kind: Service                   # Type of kubernetes resource
-#metadata:
-#  name: loghmeh-client      # Name of the kubernetes resource
-#spec:
-#  type: NodePort                # Exposes the service by opening a port on each node
-#  selector:
-#    app: loghmeh-client     # Any Pod matching the label `app=loghmeh-client` will be picked up by this service
-#  ports:                        # Forward incoming connections on port 80 to the target port 80 in the Pod
-#    - name: http
-#      port: 80
-#      targetPort: 80
+stages:
+  - build
+  - deliver
+  - deploy
+
+build:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: build
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE_DOCKERHUB" .
+  after_script:
+    - docker save -o ${CI_PROJECT_NAME}.tar "$CI_REGISTRY_IMAGE_DOCKERHUB"
+  artifacts:
+    name: "docker-image-$CI_PROJECT_NAME"
+    paths:
+      - ${CI_PROJECT_NAME}.tar
+
+deliver:
+  image: docker:latest
+  stage: deliver
+  dependencies:
+    - build
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER_DOCKERHUB" -p "$CI_REGISTRY_PASSWORD_DOCKERHUB" $CI_REGISTRY_DOCKERHUB
+    - docker load --input ${CI_PROJECT_NAME}.tar
+  script:
+    - docker push "$CI_REGISTRY_IMAGE_DOCKERHUB"
+
+deploy:
+  tags:
+    - loghmeh-runner
+  image:
+    name: bitnami/kubectl
+    entrypoint: [""]
+  stage: deploy
+  dependencies:
+    - deliver
+  script:
+    - export KUBECONFIG=./config.conf
+    - kubectl apply -f front-deployment.yml
