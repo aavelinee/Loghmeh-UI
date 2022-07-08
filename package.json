@@ -7,7 +7,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^1.9.1",
     "material-ui-rating": "^4.2.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-awesome-modal": "^2.0.5",
